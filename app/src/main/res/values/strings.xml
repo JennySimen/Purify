@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Purify</string>
+    <string name="irrigation">Irrigation</string>
+    <string name="welcome">Welcome</string>
+    <string name="well">Well</string>
+    <string name="stream">Stream</string>
+    <string name="bore_hole">Bore_Hole</string>
+    <string name="filter">Filtering</string>
+</resources>
