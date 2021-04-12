@@ -12,8 +12,8 @@ import android.widget.LinearLayout;
 
 public class WellFilterActivity extends AppCompatActivity {
 
-    ImageButton arrow;
-    LinearLayout hiddenView;
+    ImageButton arrow1;
+    LinearLayout hiddenView1;
     CardView cardView;
 
     @Override
@@ -21,17 +21,17 @@ public class WellFilterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_well_filter);
 
-        cardView = findViewById(R.id.base_cardview);
-        arrow = findViewById(R.id.arrow_button);
-        hiddenView = findViewById(R.id.hidden_view);
+        cardView = findViewById(R.id.bleach);
+        arrow1 = findViewById(R.id.arrow_button1);
+        hiddenView1 = findViewById(R.id.hidden_view1);
 
-        arrow.setOnClickListener(new View.OnClickListener() {
+        arrow1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 // If the CardView is already expanded, set its visibility
                 //  to gone and change the expand less icon to expand more.
-                if (hiddenView.getVisibility() == View.VISIBLE) {
+                if (hiddenView1.getVisibility() == View.VISIBLE) {
 
                     // The transition of the hiddenView is carried out
                     //  by the TransitionManager class.
@@ -39,8 +39,8 @@ public class WellFilterActivity extends AppCompatActivity {
                     // Class to create a default transition.
                     TransitionManager.beginDelayedTransition(cardView,
                             new AutoTransition());
-                    hiddenView.setVisibility(View.GONE);
-                    arrow.setImageResource(R.drawable.ic_baseline_expand_more_24);
+                    hiddenView1.setVisibility(View.GONE);
+                    arrow1.setImageResource(R.drawable.ic_baseline_expand_more_24);
                 }
 
                 // If the CardView is not expanded, set its visibility
@@ -49,8 +49,8 @@ public class WellFilterActivity extends AppCompatActivity {
 
                     TransitionManager.beginDelayedTransition(cardView,
                             new AutoTransition());
-                    hiddenView.setVisibility(View.VISIBLE);
-                    arrow.setImageResource(R.drawable.ic_baseline_expand_less_24);
+                    hiddenView1.setVisibility(View.VISIBLE);
+                    arrow1.setImageResource(R.drawable.ic_baseline_expand_less_24);
                 }
             }
         });

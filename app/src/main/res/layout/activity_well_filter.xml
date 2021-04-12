@@ -8,7 +8,7 @@
     tools:context=".WellFilterActivity">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/base_cardview"
+            android:id="@+id/bleach"
             style="@style/Base.CardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,8 +55,8 @@
                         android:id="@+id/heading"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="GeeksforGeeks"
-                        android:textColor="#006600"
+                        android:text="@string/bleach"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="25dp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@+id/fixed_layout"
@@ -67,12 +67,12 @@
                         app:layout_constraintVertical_bias="0.198" />
 
                     <TextView
-                        android:id="@+id/list_of_subjects"
+                        android:id="@+id/list_of_steps"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="58dp"
-                        android:text="List of subjects"
+                        android:text="@string/steps"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="@+id/fixed_layout"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +83,7 @@
 
                     <!--This is ImageButton for the expansion icon.-->
                     <ImageButton
-                        android:id="@+id/arrow_button"
+                        android:id="@+id/arrow_button1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_baseline_expand_more_24"
@@ -91,7 +91,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.802"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/list_of_subjects"
+                        app:layout_constraintTop_toBottomOf="@+id/list_of_steps"
                         app:layout_constraintVertical_bias="0.0" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -101,7 +101,7 @@
                     The parent LinearLayout contains 3 child LinearLayouts
                     that hold a subject name and an icon each.-->
                 <LinearLayout
-                    android:id="@+id/hidden_view"
+                    android:id="@+id/hidden_view1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -124,16 +124,16 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginEnd="10dp"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/bleach" />
+                            android:src="@drawable/tbspn" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="20dp"
-                            android:text="Database Management"
+                            android:text="@string/addbleach"
                             android:textColor="#000000"
-                            android:textSize="20dp" />
+                            android:textSize="15dp" />
                     </LinearLayout>
 
                     <!--Child LinearLayout 2-->
@@ -149,16 +149,16 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginEnd="10dp"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/bleach" />
+                            android:src="@drawable/bkt" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="20dp"
-                            android:text="Data Structures"
+                            android:text="@string/restbkt"
                             android:textColor="#000000"
-                            android:textSize="20dp" />
+                            android:textSize="15dp" />
                     </LinearLayout>
 
                     <!--Child LinearLayout 3-->
@@ -174,16 +174,16 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginEnd="10dp"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/bleach" />
+                            android:src="@drawable/drkwtr" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="20dp"
-                            android:text="Operating Systems"
+                            android:text="@string/drink"
                             android:textColor="#000000"
-                            android:textSize="20dp" />
+                            android:textSize="15dp" />
                     </LinearLayout>
                 </LinearLayout>
 

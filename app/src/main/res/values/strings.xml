@@ -6,4 +6,9 @@
     <string name="stream">Stream</string>
     <string name="tank">Tank</string>
     <string name="filter">Filtering</string>
+    <string name="bleach">Using Bleach</string>
+    <string name="steps">Steps To Follow</string>
+    <string name="addbleach">Put in 1tbsn bleach in 5l of water</string>
+    <string name="restbkt">Mix and allow bucket of water stand for 30mins</string>
+    <string name="drink">Water is now safe to drink</string>
 </resources>
