@@ -9,7 +9,7 @@ import android.view.View;
 
 public class FilterActivity extends AppCompatActivity {
 
-    private CardView cardViewWell, cardViewStream, cardViewTank;
+    private CardView cardViewWell;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
