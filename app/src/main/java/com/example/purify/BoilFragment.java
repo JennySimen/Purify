@@ -19,7 +19,7 @@ public class BoilFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.bleach_frag, container, false);
+        View v = inflater.inflate(R.layout.boil_frag, container, false);
 
 
         recyclerViewBoil = v.findViewById(R.id.boil_Recycler);

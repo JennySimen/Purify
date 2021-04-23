@@ -52,6 +52,6 @@ class BoilFilterVH extends RecyclerView.ViewHolder {
         super(itemView);
 
         boilImg = itemView.findViewById(R.id.img_boil);
-        boilProcess = itemView.findViewById(R.id.process);
+        boilProcess = itemView.findViewById(R.id.process_boil);
     }
 }
