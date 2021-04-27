@@ -6,8 +6,12 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:src="@drawable/well_irrig"
-        android:layout_marginTop="75dp"/>
+        android:src="@drawable/well_irr2"
+        android:layout_marginTop="75dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/wellIrigrRecycler"
