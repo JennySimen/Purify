@@ -26,14 +26,17 @@ public class BoilFragment extends Fragment {
         recyclerViewBoil.setLayoutManager(new LinearLayoutManager(getContext()));
         boildata = new ArrayList<>();
 
-        boildata boil1 = new boildata(R.drawable.bkt, "Put in 1tbsn bleach in 5l of water");
+        boildata boil1 = new boildata(R.drawable.bkt, "Measure the water to boil");
        boildata.add(boil1);
 
-        boildata boil2 = new boildata(R.drawable.bkt, "Mix and allow bucket of water stand for 30mins");
+        boildata boil2 = new boildata(R.drawable.pot2, "Boil the water for up t0 30mins");
         boildata.add(boil2);
 
-        boildata boil3 = new boildata(R.drawable.drkwtr, "Water is now safe to drink");
+        boildata boil3 = new boildata(R.drawable.pot3, "Allow water to cool");
         boildata.add(boil3);
+
+        boildata boil4 = new boildata(R.drawable.drkwtr, "Save water in containers");
+        boildata.add(boil4);
 
         recyclerViewBoil.setAdapter(new BoilFilterAdapter(getContext(),boildata));
 
