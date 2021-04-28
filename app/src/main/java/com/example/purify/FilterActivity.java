@@ -9,7 +9,7 @@ import android.view.View;
 
 public class FilterActivity extends AppCompatActivity {
 
-    private CardView cardViewWell;
+    private CardView cardViewWell, cardViewStream, cardViewTank;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,24 @@ public class FilterActivity extends AppCompatActivity {
             public void onClick(View view) {
             Intent wellIntent = new Intent(FilterActivity.this, WellFilterActivity.class);
             startActivity(wellIntent);
+            }
+        });
+
+        cardViewStream = findViewById(R.id.stream);
+        cardViewStream.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent streamIntent = new Intent(FilterActivity.this, WellFilterActivity.class);
+                startActivity(streamIntent);
+            }
+        });
+
+        cardViewTank = findViewById(R.id.tank);
+        cardViewTank.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent tankIntent = new Intent(FilterActivity.this, WellFilterActivity.class);
+                startActivity(tankIntent);
             }
         });
     }
